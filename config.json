@@ -1,0 +1,6 @@
+{
+  "socket":{
+    "port": 5050,
+    "format" : "utf-8"
+  }
+}
