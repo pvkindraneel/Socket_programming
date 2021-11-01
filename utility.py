@@ -54,8 +54,6 @@ class Utility:
             msg_len = len(message)
             send_length = str(msg_len).encode(self.Format)
             send_length += b' ' * (self.header - len(send_length))
-            print(send_length)
-            print(message)
             client.send(send_length)
             client.send(message)
             print(client.recv(2048))
